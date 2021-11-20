@@ -1,108 +1,150 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+#SPIN IT
 
-Welcome USER_NAME,
+This is an e-commerce website for DEE JEEYS where they can find second hand records and devices that I create for Milestone Project 4 (Full Stack Frameworks with Django) in Code Institute, Ireland. The use of the website is for educational purposes only, however, all the functionalities work as if it is an actual e-commerce website. It is a mobile responsive website and the link to the website is available HERE.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# User Stories
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# UX planes
+## Strategy Plane
 
-## Gitpod Reminders
+## Scope Plane
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Structure Plane
 
-`python3 -m http.server`
+## Skeleton Plane
 
-A blue button should appear to click: _Make Public_,
+## Surface Plane
+### Typography
 
-Another blue button should appear to click: _Open Browser_.
+# Website Development plan
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# Features
 
-A blue button should appear to click: _Make Public_,
+## Existing Features
 
-Another blue button should appear to click: _Open Browser_.
+## Features left to Implement
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+# Technologies Used
 
-To log into the Heroku toolbelt CLI:
+* HTML for markup
+* CSS for style
+* Bootstrap for mainframe
+* JavaScript for interaction
+* Python as a backend programming language
+* Django (an open-source web framework) as the main framework of Python
+* SQLite (Django built-in database) as a database in development mode
+* PostgreSQL (Heroku built-in) as a database in production mode
+* Google Fonts for fonts
+* Font Awesome for icons
+* Stripe for credit card payment
+* AWS (Amazon Web Services) for hosting static files and images for the website
+* Gitpod as Integrated Development Environment (IDE)
+* Git for local version control, keeping the files & documents
+* Github for online version control and keeping the files & documents
+* Heroku for deploying the website
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+# Resources
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## General Resources
 
-------
+## Tools
 
-## Release History
+# Testing
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+# Bugs
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+# Version Control
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Git as a local repository and GitHub as a remote repository are used for the project, and below is how they are used as the version control for the project.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Setting Up
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+1. Create a remote repository in GitHub by clicking "New repository" on the main page
+2. Use Code Institute Template, put the repository name and click Create Repository making sure to select public
+3. Open the repository with Gitpod which is my Integrated Development Environment (IDE). By using Code Institue Template, initialisation including initial commit is done so no need to do git init command when open IDE, or to use git push -u origin main command for my first commit. gitignore file, which is very important for the project including some confidential information, is created with Code Institute template so not necessary to create it, however, it is checked to include files such as pycache, *.sqlite3, env.py etc
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* Commitments
+When a section or even a group of work is completed, it is committed in git and pushed into GitHub to make sure to keep the history of the work logged properly and not to lose the work in unexpected situations. Below commands are used for this
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* git status | To check the status of new/modified folders, files, and documents
+* git add . | To put all new and updated work on the stage in git
+  git add <specific file> is used when different types of work are done but do not want to commit everything on the same commitment
+* git commit -m "Example commit" | To commit the work on the stage in git before pushing it to GitHub
+* git push | To update the repository in GitHub for main / master branch
+  git push origin <branch name> is used when pushing git into GitHub for sub-branches
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* Branches
+When some testing is needed, create a branch and test it on the branch instead of using the main / master branch. When the testing is successful, then merge the branch into the main / master and when it is not, leave the branch unmerged and keep working on the main / master branch. Below commands are used for this
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* git branch <branch name> | To create a new branch
+* git checkout <branch name> | To switch branch
+* git branch | To check current branch
+* git merge <branch name> | To merge sub-branch into main / master, do this on main / master branch
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+# Deployment
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The website of this project requires back-end technologies such as server, application, and database so the website is deployed in Heroku, which is a cloud platform with a service supporting several programming languages, because GitHub can only host a static website. Heroku Postgres is used for the database. AWS services, which is also a cloud-based platform, is used to store static files and images as Heroku has no files system to store new files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Below are the processes of deploying the website to Heroku and setting up static files & images in AWS.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+# Heroku
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+1. Create an app in Heroku. Click New, put App name and select region
+2. Add Heroku Postgres for the database
+3. Install dj_database_url and psycopg2-binary to use Heroku Postgres, and run pip3 freeze > requirements.txt command to add them on requirments.txt
+4. Update settings.py of the product (spinit). Import dj_database_url, comment out sqlite databases and add dj databases variable temporary while the database is transferred to Heroku Postgres
+5. Run python3 manage.py showmigrations command to see the status of migrations (Currently not migrated). Run python3 manage.py migrate command to migrate
+6. Import all products data. Run python3 manage.py loaddata command to load the categories first, brands next and products the last. The order of loading is important as all the products are associated with categories and brands
+7. Create a super user with python3 manage.py createsuperuser command for product admin
+8. Install gunicorn which acts as the webserver, and freeze it into requirements file with pip3 freeze > requirements.txt command
+9. Create a Procfile which specifies the commands that are executed by the app on startup
+10. Temporary disable collectstatic by setting heroku config:set DISABLE_COLLECTSTATIC = 1 and host name of Heroku to allowed hosts in settings.py
+11. Initialise Heroku in git with heroku: git:remote -a spinit and put git into Heroku with git push heroku master
+12. Set up automatic deployment when git is pushed to GitHub. Go to Deployment on Heroku, search the GitHub repository, connect and click Enable Automatic Deploys
+13. Generate a new secret key, set it up in Heroku and update settings.py. Change the setting of Debug mode that only True in Development mode
+14. Check Activity Feed to see Build in Progress to confirm automatic deployment is working
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+# AWS
 
-------
+1. Open S3 and create a new bucket, which stores the files, by completing the name and region
+2. Set up basic settings. Enable static website hosting so that it gives a new endpoint for accessing from the internet. Put index.html and error.html as default values
+3. Set up CORS configuration which is the access between Heroku and this S3 Bucket
+4. Set up Bucket Policy. Generate a policy with AWS policy generator. Add /* at the end of Resource to allow access to all resources in the bucket
+5. Create a user to access the bucket. Go to IAM (Identity and Access Management) and create a group for the user to live in. Then, create a policy by importing pre-built policy
+6. Attach the policy to the group
+7. Create a user and add it to the group. When the user is added to the group, it creates csv file containing Access Key ID and Secret access key which are used to authenticate them from Django app. *It is very important to download the file and save it as you cannot download it again
 
-## FAQ about the uptime script
+# Django
 
-**Why have you added this script?**
+1. Install two new packages, pip3 install boto3, pip3 install django-storages, and run pip3 freeze > requirements.txt command to add them on requirments.txt
+2. Update settings.py to tell Django which bucket it should be communicating with *It is very important to keep AWS access keys secrets as these can be used to store or move data in the bucket and you will be charged by Amazon for it
+3. Add these secret keys on Heroku and set USE_AWS = True
+4. Create custome_storages.py to tell Django to use S3 to store static files and upload images when it is in production
+5. Add AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com' to tell Django where the static files come from in production and add some settings for Static and Media files on settings.py
+6. Add all the updates in git, commit it and push it to GitHub. Heroku runs python3 manage.py to collectstatic during the process which also searches through all the apps and project folders looking for static files. Then, it uses S3 domain settings in conjunction with the custom storage classes that tell the location at the URL where the things should be saved when it is in production. This can be confirmed in S3 bucket
+7. Add Cache control on settings.py as static files do not change often and to improve the performance for users
+8. Upload product images via S3. Create a folder, and upload images
+9. Verify superuser's email address on Heroku Postgres. Login admin and check the VERIFIED and PRIMARY boxes
+10. Add Stripe keys to Heroku Config Vars and create a new webhook endpoint
+11. Create Gmail account, add email host pass & user to Heroku Config Vars and add code on settings.py of the product (spinit)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+# Credits
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Code
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Contents
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Media 
 
-**So….?**
+## Acknowledgements
+I would like to thank;
+* My mentor, Gurjot Singh, for going through the project with me 
+* Code Institute Tutors for giving me a guidance on how to solve some issues and fellow students in the Slack Community.
+* My wife, Saoirse Mc Dermott for design advice
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
 
 Happy coding!
