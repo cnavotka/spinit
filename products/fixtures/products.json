@@ -5,13 +5,208 @@
         "fields": {
             "sku": "SP2021001",
             "category": 1,
-            "name": "Aphex Twin Come to Daddy",
+            "name": "Aphex Twin - Come to Daddy",
             "description": "Classic album from the prolific Aphex Twin, include unreleased mixes.",
             "has_sizes": "False",
             "price": 15.00,
             "is_discount": "False",
             "discount_price": 0.00,
             "image": "aphextwin-cometodaddy.JPEG"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021002",
+            "category": 1,
+            "name": "Beastie Boys - Hello Nasty",
+            "description": "Great album of the rappers from Brooklyn.",
+            "has_sizes": "False",
+            "price": 15.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "beastieboys-hellonasty.JPEG"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021003",
+            "category": 1,
+            "name": "Beastie Boys - Ill Communication",
+            "description": "The rappers from Brooklyn with an agressive album.",
+            "has_sizes": "False",
+            "price": 15.00,
+            "is_discount": "True",
+            "discount_price": 10.00,
+            "image": "beastieboys-illcommunication.JPEG"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021004",
+            "category": 1,
+            "name": "Dimitri from Paris - Live from the Playboy Mansion",
+            "description": "Exquisite selection of classics.",
+            "has_sizes": "False",
+            "price": 20.00,
+            "is_discount": "True",
+            "discount_price": 15.00,
+            "image": "dimitrifromparis-playboymansion.JPEG"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021005",
+            "category": 1,
+            "name": "Dreadzone - Dubwiser Volumen One",
+            "description": "Selection of breaks and dub by the talented Dreadzone.",
+            "has_sizes": "False",
+            "price": 25.00,
+            "is_discount": "True",
+            "discount_price": 15.00,
+            "image": "dreadzone-dubwiservolumenone.JPEG"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021006",
+            "category": 1,
+            "name": "Dubmatix - Clash of the Titans",
+            "description": "Selection of breaks and dub by the famous Dubmatix.",
+            "has_sizes": "False",
+            "price": 20.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "dubmatix-clashofthetitans.JPEG"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021007",
+            "category": 1,
+            "name": "Max Glazer presents Dancehall Classics",
+            "description": "Selection of classics dancehall anthems by Max Glazer.",
+            "has_sizes": "False",
+            "price": 30.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "maxglazer-variousartists.JPEG"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021008",
+            "category": 1,
+            "name": "Rock It - Various Artists",
+            "description": "Selection of classics rap and hip hop anthems from the early 80's.",
+            "has_sizes": "False",
+            "price": 35.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "rockit-variousartists.JPEG"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021009",
+            "category": 1,
+            "name": "Scientist launches Dubstep into outer Space",
+            "description": "Futuristic dubtep album.",
+            "has_sizes": "False",
+            "price": 35.00,
+            "is_discount": "True",
+            "discount_price": 30.00,
+            "image": "scientistlaunches-dubstepintoouterspace.JPEG"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021010",
+            "category": 1,
+            "name": "Thunderbirds - Soundtrack",
+            "description": "Soundtrack of the famous TV show from the 60's.",
+            "has_sizes": "False",
+            "price": 35.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "thunderbirds-soundtrack.JPEG"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021011",
+            "category": 1,
+            "name": "Various Artists - Box of Dub",
+            "description": "Compilation with tracks from the pioneers of the Dubstep scene.",
+            "has_sizes": "False",
+            "price": 35.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "variousartits-boxofdub.JPEG"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021012",
+            "category": 1,
+            "name": "Dancehall - The rise of Jamaican Dancehall culture",
+            "description": "Compilation with tracks from the pioneers of the Dancehall scene.",
+            "has_sizes": "False",
+            "price": 35.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "variousartists-dancehall.JPEG"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021013",
+            "category": 1,
+            "name": "Startracking 76",
+            "description": "Compilation with tracks from TV shows of the 70's.",
+            "has_sizes": "False",
+            "price": 35.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "variousartists-startracking76.JPEG"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021014",
+            "category": 1,
+            "name": "The Best of Two Tone",
+            "description": "Compilation with hits of the Two Tone style.",
+            "has_sizes": "False",
+            "price": 35.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "variousartists-thebestoftwotone.JPEG"
         }
     }
 ]
