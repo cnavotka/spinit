@@ -2,50 +2,45 @@
     {
         "pk": 1,
         "model": "products.category",
-        "fields": { "name": "records", "friendly_name": "Records" }
+        "fields": { "name": "lps", "friendly_name": "LP" }
     },
     {
         "pk": 2,
         "model": "products.category",
-        "fields": { "name": "lps", "friendly_name": "LP" }
+        "fields": { "name": "eps", "friendly_name": "EP" }
     },
     {
         "pk": 3,
         "model": "products.category",
-        "fields": { "name": "eps", "friendly_name": "EP" }
+        "fields": { "name": "seveninches", "friendly_name": "Seveninches" }
     },
     {
         "pk": 4,
         "model": "products.category",
-        "fields": { "name": "seveninches", "friendly_name": "Seveninches" }
+        "fields": { "name": "turntables", "friendly_name": "Turntables" }
     },
     {
         "pk": 5,
         "model": "products.category",
-        "fields": { "name": "turntables", "friendly_name": "Turntables" }
+        "fields": { "name": "djbags", "friendly_name": "DJBags" }
     },
     {
         "pk": 6,
         "model": "products.category",
-        "fields": { "name": "djbags", "friendly_name": "DJBags" }
+        "fields": { "name": "accesories", "friendly_name": "Accesories" }
     },
     {
         "pk": 7,
         "model": "products.category",
-        "fields": { "name": "accesories", "friendly_name": "Accesories" }
+        "fields": { "name": "controllers", "friendly_name": "Controllers" }
     },
     {
         "pk": 8,
         "model": "products.category",
-        "fields": { "name": "controllers", "friendly_name": "Controllers" }
-    },
-    {
-        "pk": 9,
-        "model": "products.category",
         "fields": { "name": "synths", "friendly_name": "Synths" }
     },
     {
-        "pk": 10,
+        "pk": 9,
         "model": "products.category",
         "fields": { "name": "headphones", "friendly_name": "headphones" }
     }

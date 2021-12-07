@@ -1,0 +1,17 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021001",
+            "category": 1,
+            "name": "Aphex Twin Come to Daddy",
+            "description": "Classic album from the prolific Aphex Twin, include unreleased mixes.",
+            "has_sizes": "False",
+            "price": 15.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "aphextwin-cometodaddy.JPEG"
+        }
+    }
+]
