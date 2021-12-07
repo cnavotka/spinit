@@ -8,10 +8,10 @@
         </div>
     </a>
     <div class="dropdown-menu border-0 w-100 p-3 rounded-3 my-0" aria-labelledby="mobile-search">
-        <form class="form" method="GET" action="{% url 'products' %}">
+        <form class="form" method="GET" action="">
             <div class="input-group w-100">
                 <input class="form-control border border-black rounded-4" type="text" name="q"
-                    placeholder="Search our cars">
+                    placeholder="Search our products">
                 <div class="input-group-append">
                     <button class="form-control form-control btn btn-black border border-black rounded-0" type="submit">
                         <span class="icon">
@@ -50,7 +50,7 @@
 <!-- Cart -->
 <div class="list-inline-item">
     <a class="{% if grand_total %} text-white{% else %}text-dark{% endif %} nav-link d-block d-lg-none"
-        href="{% url 'view_cart' %}"  style="font-size: small; padding: 0;">
+        href=""  style="font-size: small; padding: 0;">
         <div class="text-center">
             <div><i class="fas fa-shipping-fast fa-lg text-dark"></i></div>
             <p class="my-0 text-dark">
