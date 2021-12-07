@@ -15,6 +15,7 @@
 
     {% block corecss %}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/base.css' %}">
         <!--Google font Roboto-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,7 +69,7 @@
 
             <!-- Search Bar -->
             <div class="col-12 col-lg-4 my-auto py-1 py-1-lg-0">
-                <form method="GET" action="{% url 'products' %}">
+                <form method="GET" action="">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-8" type="text" name="q" placeholder="Search our products">
                         <div class="input-group-append">
@@ -111,7 +112,7 @@
                     <!-- Shopping Cart -->
                     <li class="list-inline-item">
                         <!-- Displays the total beneath the icon. Icon is a clickable link, taking the user to the cart -->
-                        <a class="{% if grand_total %} text-warning {% else %} text-white {% endif %} nav-link" href="{% url 'view_cart' %}">
+                        <a class="{% if grand_total %} text-warning {% else %} text-white {% endif %} nav-link" href="">
                             <div class="text-center">
                                 <div><i class="fas fa-shipping-fast fa-lg"></i></div>
                                 <p class="my-0">
@@ -134,8 +135,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                    {% include 'includes/mobile_top_header.html' %}
-                    {% include 'includes/main_nav.html' %}
+                    
             </nav>
         </div>
                  
@@ -169,6 +169,6 @@
 
     {% block postloadjs %}
     {% endblock %}
-    {% include 'includes/footer.html' %}
+
   </body>
 </html>

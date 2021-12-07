@@ -1,0 +1,164 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    background: url('/media/background.JPEG') no-repeat center center;
+    background-size: cover;
+    background-color: #F7FFF7;
+    min-height: 100%;
+    color: #343434;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main.content {
+    flex: 1 auto;
+  }
+  
+  /* from Bulma */
+  .icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  .logo-font {
+    text-transform: uppercase;
+    color: #F7FFF7;
+  }
+  
+  .container {
+    margin-top: 185px;
+  }
+  
+  .cart-container {
+    margin-right: 130px;
+    margin-left: 130px;
+    margin-top: 40px;
+    padding: 20px;
+  }
+  
+  .discover-text {
+    color: #F7FFF7;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .main-logo-link {
+    width: fit-content;
+  }
+  
+  .discover-music-btn {
+    background: black;
+    color: white;
+  }
+  
+  .btn-black {
+    background: black;
+    color: white;
+  }
+  
+  .btn-outline-black {
+    background: white;
+    color: black !important; 
+    border: 1px solid black;
+  }
+  
+  .btn-outline-black:hover,
+  .btn-outline-black:active,
+  .btn-outline-black:focus {
+    background: black;
+    color: white !important;
+  }
+  
+  .discover-music-btn:hover,
+  .discover-music-btn:active,
+  .discover-music-btn:focus,
+  .btn-black:hover,
+  .btn-black:active,
+  .btn-black:focus {
+    background: black;
+    color: white;
+  }
+  
+  .text-black {
+    color: #000 !important;
+  }
+  
+  .border-black {
+    border: 1px solid #6ca6c1 !important;
+  }
+  
+  .bg-black {
+    background-color: #000 !important;
+  }
+  
+  
+
+  /* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  }
+  
+  /* fixed top navbar only on medium and up */
+  @media (min-width: 992px) {
+    .fixed-top-desktop-only {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+    }
+  
+   /* pad the top a bit when navbar is collapsed on mobile */
+  @media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+  
+    body {
+        height: calc(100vh - 116px);
+    }
+  
+    .display-4.logo-font.text-black {
+        font-size: small;
+    }
+  
+    .nav-link {
+        padding: 0.15rem;
+    }
+  
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+  
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+  
+    #service-banner h4 {
+        font-size: .9rem;
+    }
+  
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+  
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+   }
+  }
+  

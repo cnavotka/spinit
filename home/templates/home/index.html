@@ -1,39 +1,21 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'home/css/index.css' %}">
-{% endblock %}
-
 {% block page_header %}
-<div class="bg-image">
-    <img class="d-none d-md-block w-100" src="" alt="Main image">
-    <img class="d-md-none w-100" src="" alt="Main image">
-    <a href="">
-        <p class="d-none d-lg-inline-block text-uppercase fw-bold fade-in-text color--e81010 catch--phrase">Sale Now On</p>
-    </a>
-    <a class="btn btn-warning text-uppercase font-weight-bold shop--now--btn" href="" 
-        title="Shop Now button">Shop Now</a>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
 </div>
 {% endblock %}
 
 {% block content %}
-<section id="top--brand" class="text-center container">
-    <h2 class="mt-4 mb-md-4">Top Brands</h2>
-    <!-- Top Brand Logos -->
-    <div class="row mt-3 mt-md-3 mt-lg-5">
-        <div class="col-6 col-md-3 p-3 hvr-float-shadow">
-            <a href=""><span class="vertical--align--middle"></span><img
-                    class="brand--logo" src="" alt="top brand technics"></a>
-        </div>
-        <div class="col-6 col-md-3 p-3 hvr-float-shadow">
-            <a href=""><span class="vertical--align--middle"></span><img
-                    class="brand--logo" src="" alt="top brand korg"></a>
-        </div>
-        <div class="col-6 col-md-3 p-3 hvr-float-shadow">
-            <a href=""><span class="vertical--align--middle"></span><img
-                    class="brand--logo" src="" alt="top brand ableton"></a>
-        </div>
-    </div>
-</section>
+<!-- Discover Now Button links to all products -->
+<div class="container">
+    <h4>
+        <a href="" class="discover-records-btn btn btn-lg rounded-8 text-uppercase py-3">
+            Shop Now!
+        </a>
+    </h4>
+</div>
 {% endblock %}
