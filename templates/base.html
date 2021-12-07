@@ -49,129 +49,96 @@
   <body>
     
      <!-- Main Header -->
-     <header class="container-fluid fixed-top header--border bg--color--ffffff">
+     <header class="container-fluid bg-dark bg-gradient fixed-top">
       
-      <div class="row mt-3">
-          <!-- Website Logo -->
-          <div class="col-6 order-lg-first col-lg-4">
-              <a class="navbar-brand" href="{% url 'home' %}">
-                  <img class="main--logo" src="{% static '' %}" alt="logo" loading="lazy" />
-              </a>
-          </div>
-          <!-- User Account -->
-          <div class="col-6 order-lg-last col-lg-4">
-              <div class="text-reset me-3 inline float-end">
-                  <a href="{% url 'view_cart' %}" aria-label="Shopping Cart">
-                      <i class="fas fa-shopping-cart fa-lg icon {% if grand_total %}color--000000{% endif %}"></i>
-                  </a>
-                  <p class="text-center m-0 color--737373 {% if grand_total %}font-weight-bold color--000000{% endif %}">
-                      {% if grand_total %}
-                          €{{ grand_total|floatformat:2 }}
-                      {% else %}
-                          €0.00
-                      {% endif %}
-                  </p>
-              </div>
-              <div class="d-none d-lg-inline float-end">
-                  <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
-                      id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                      <i class="fas fa-user fa-lg icon {% if request.user.is_authenticated %}color--333{% endif %}"></i>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end border" aria-labelledby="navbarDropdownMenuLink">
-                      {% if request.user.is_authenticated %}
-                          <li>
-                              <a class="dropdown-item" href="{% url 'profile' %}">My Profile</a>
-                          </li>
-                          <li>
-                              <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
-                          </li>
-                      {% else %}
-                          <li>
-                              <a class="dropdown-item" href="{% url 'account_signup' %}">Register</a>
-                          </li>
-                          <li>
-                              <a class="dropdown-item" href="{% url 'account_login' %}">Login</a>
-                          </li>
-                      {% endif %}
-                  </ul>
-              </div>
-              <div class="d-none d-lg-inline float-end">
-                  {% if request.user.is_authenticated and request.user.is_superuser%}
-                      <a href="{% url 'add_product' %}"><i class="fas fa-tools fa-lg icon color--000000"></i></a>
-                  {% endif %}
-              </div>
-          </div>
-          <!-- Search Form -->
-          <div class="col-12 order-lg-second col-lg-4">
-              <form class="d-flex input-group pt-2 float-end float-lg-none mx-lg-auto w--85" method="GET"
-                  action="{% url 'products' %}">
-                  <input class="form-control" type="text" name="q" placeholder="Search Products"
-                      aria-label="Search" />
-                  <button class="btn btn-outline-primary border-0" type="submit" data-mdb-ripple-color="dark" aria-label="Search button">
-                      <i class="fas fa-search font-weight-bold color--000000"></i>
-                  </button>
-              </form>
-          </div>
-      </div>
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light font-weight-bold">
-          <!-- Container Wrapper -->
-          <div class="container-fluid">
-              <!-- Toggle Button -->
-              <button class="navbar-toggler p-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" 
-                          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fas fa-bars"></i>
-              </button>
-              <!-- Collapsible Wrapper -->
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-                      <li class="nav-item">
-                          <a class="nav-link" href="{% url 'products' %}">Records</a>
-                      </li>
-                      <li class="vl d-none d-lg-inline"> &nbsp;&#124;&nbsp; </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="{% url 'products' %}?">Turntables & Accesories</a>
-                      </li>
-                      <li class="vl d-none d-lg-inline"> &nbsp;&#124;&nbsp; </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="{% url 'products' %}">Studio</a>
-                      </li>
-                      <li class="vl d-none d-lg-inline"> &nbsp;&#124;&nbsp; </li>
-                      <li class="nav-item">
-                          <a class="nav-link text-uppercase" href="{% url 'products' %}?sale">Sale</a>
-                      </li>
-                      <li class="vl d-none d-lg-inline"> &nbsp;&#124;&nbsp; </li>
-                      <li class="nav-item">
-                          <a class="nav-link text-uppercase" href="{% url 'blog' %}?">Blog/a>
-                      </li>
-                      <li>
-                          <hr class="d-lg-none">
-                      </li>
-                      {% if request.user.is_authenticated and request.user.is_superuser%}
-                          <li class="d-lg-none">
-                              <a class="nav-link" href="{% url 'add_product' %}">Product Management</a>
-                          </li>
-                      {% endif %}
-                      {% if request.user.is_authenticated %}
-                          <li class="d-lg-none">
-                              <a class="nav-link" href="{% url 'profile' %}">My Profile</a>
-                          </li>
-                          <li class="d-lg-none">
-                              <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-                          </li>
-                      {% else %}
-                          <li class="d-lg-none">
-                              <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
-                          </li>
-                          <li class="d-lg-none">
-                              <a class="nav-link" href="{% url 'account_login' %}">Login</a>
-                          </li>
-                      {% endif %}
-                  </ul>
-              </div>
-          </div>
-      </nav>
+        <!--Delivery banner-->
+        <div id="service-banner" class="row text-center">
+            <div class="col bg-black">
+                <h4 class="text-white my-1">Free Delivery when you spend more than €30</h4>
+            </div>
+        </div>
+        
+        <!--Top Nav-->
+        <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                    <h2 class="logo-font my-0"><strong>SPIN IT</strong></h2>
+                </a>
+            </div>
 
+            <!-- Search Bar -->
+            <div class="col-12 col-lg-4 my-auto py-1 py-1-lg-0">
+                <form method="GET" action="{% url 'products' %}">
+                    <div class="input-group w-100">
+                        <input class="form-control border border-black rounded-8" type="text" name="q" placeholder="Search our products">
+                        <div class="input-group-append">
+                            <button class="form-control btn btn-black border border-black rounded-8" type="submit">
+                                <span class="icon">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- My Account, Login/Out -->
+            <div class="col-12 col-lg-4 my-auto py-1 py-1-lg-0">
+                <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                    <li class="list-inline-item dropdown">
+                        <a class="text-white nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="text-center">
+                                <div><i class="fas fa-user fa-lg"></i></div>
+                                <p class="my-0">My Account</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu border-2" aria-labelledby="user-options">
+                            <!-- Deals if a user is authenticated and logged in -->
+                            {% if request.user.is_authenticated %}
+                                <!-- Deals if a superuser is authenticated and logged in -->
+                                {% if request.user.is_superuser %}
+                                    <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                {% endif %}
+                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            {% else %}
+                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            {% endif %}
+                        </div>
+                    </li>
+            
+                    <!-- Shopping Cart -->
+                    <li class="list-inline-item">
+                        <!-- Displays the total beneath the icon. Icon is a clickable link, taking the user to the cart -->
+                        <a class="{% if grand_total %} text-warning {% else %} text-white {% endif %} nav-link" href="{% url 'view_cart' %}">
+                            <div class="text-center">
+                                <div><i class="fas fa-shipping-fast fa-lg"></i></div>
+                                <p class="my-0">
+                                    <!-- If there's something in the cart, the cost will be displayed, otherwise it will be set a € zero -->
+                                    {% if grand_total %}
+                                        €{{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                        €0.00
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Collapses the navbar down to a button for mobile -->
+        <div class="row bg-dark bg-gradient">
+            <nav class="navbar navbar-expand-lg navbar-light bg-warning w-100">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    {% include 'includes/mobile_top_header.html' %}
+                    {% include 'includes/main_nav.html' %}
+            </nav>
+        </div>
+                 
     </header>
 
     {% if messages %}
