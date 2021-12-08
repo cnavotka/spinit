@@ -540,4 +540,289 @@
             "image": "thesoupdragons-motheruniverse.JPEG"
         }
     },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021037",
+            "category": 4,
+            "name": "Technics MKII SL 1200",
+            "description": "World famous direct drive turntable.",
+            "has_sizes": "False",
+            "price": 250.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "technics-turntable1.JPEG"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021038",
+            "category": 4,
+            "name": "Technics MKII SL 1200",
+            "description": "World famous direct drive turntable.",
+            "has_sizes": "False",
+            "price": 300.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "technics-turntable2.JPEG"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021039",
+            "category": 5,
+            "name": "Dickies DJ Bag",
+            "description": "Strong dj bag with a capacity to carry around 40 records.",
+            "has_sizes": "False",
+            "price": 35.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "dickies-djbag.JPEG"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021040",
+            "category": 5,
+            "name": "Leather DJ Bag",
+            "description": "Strong dj bag with a capacity to carry around 40 records.",
+            "has_sizes": "False",
+            "price": 35.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "leather-djbag.JPEG"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021041",
+            "category": 6,
+            "name": "45 RPM Spindle Center Adapter",
+            "description": "Practical adapter for 7 inches records.",
+            "has_sizes": "False",
+            "price": 10.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "45-adapter.JPEG"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021042",
+            "category": 6,
+            "name": "Near Mint",
+            "description": "Vinyl cleaning product, help to restore your records.",
+            "has_sizes": "False",
+            "price": 5.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "cleaning-vinyl.JPEG"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021043",
+            "category": 6,
+            "name": "Ortofon Stylus needles",
+            "description": ".World famous needles for scratch",
+            "has_sizes": "False",
+            "price": 150.00,
+            "is_discount": "True",
+            "discount_price": 140.00,
+            "image": "ortofon-needles.JPEG"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021044",
+            "category": 6,
+            "name": "Slipmat",
+            "description": "Slipmat designed for scratch.",
+            "has_sizes": "False",
+            "price": 15.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "lines-slipmat.JPEG"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021045",
+            "category": 6,
+            "name": "Slipmat",
+            "description": "Suicide Girls theme slipmat for scratch.",
+            "has_sizes": "False",
+            "price": 25.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "suicide-slipmat.JPEG"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021046",
+            "category": 6,
+            "name": "Vinyl Brush",
+            "description": "Ideal for clean and remove static from your records.",
+            "has_sizes": "False",
+            "price": 10.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "vinyl-brush.JPEG"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021047",
+            "category": 7,
+            "name": "Ableton Push",
+            "description": "Controller that perfectly integrates with Ableton Live.",
+            "has_sizes": "False",
+            "price": 200.00,
+            "is_discount": "True",
+            "discount_price": 150.00,
+            "image": "ableton-push.JPEG"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021048",
+            "category": 7,
+            "name": "Behringer BCD-3000",
+            "description": "Lets you play, mix and scratch any audio format.",
+            "has_sizes": "False",
+            "price": 60.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "behringer-controller.JPEG"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021049",
+            "category": 7,
+            "name": "Korg Nano Kontrol",
+            "description": "USB control surface compatible with any software.",
+            "has_sizes": "False",
+            "price": 30.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "korg-nanokontrol.JPEG"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021050",
+            "category": 8,
+            "name": "Haynes Electro Synth",
+            "description": "Build your own working synthetizer.",
+            "has_sizes": "False",
+            "price": 10.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "electrosynth-build.JPEG"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021051",
+            "category": 8,
+            "name": "Korg Electribe ER-1",
+            "description": "Analog drum synthetizer.",
+            "has_sizes": "False",
+            "price": 160.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "korg-electribe.JPEG"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021052",
+            "category": 8,
+            "name": "Tascam DR-05",
+            "description": "Portable and easy to use recorder.",
+            "has_sizes": "False",
+            "price": 10.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "tascam-recorder.JPEG"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021053",
+            "category": 9,
+            "name": "Technics DJ1200 Headphones",
+            "description": "The standard for any good dj.",
+            "has_sizes": "False",
+            "price": 90.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "technics-headphones.JPEG"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021054",
+            "category": 9,
+            "name": "Star Wars Headphones",
+            "description": "On the budget headphones for studio.",
+            "has_sizes": "False",
+            "price": 30.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "starwars-headphones.JPEG"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021055",
+            "category": 9,
+            "name": "Rock Jam Microphone",
+            "description": "Dinamic Microphone.",
+            "has_sizes": "False",
+            "price": 10.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "microphone.JPEG"
+        }
+    }
 ]
