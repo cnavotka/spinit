@@ -208,5 +208,336 @@
             "discount_price": 0.00,
             "image": "variousartists-thebestoftwotone.JPEG"
         }
-    }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021015",
+            "category": 2,
+            "name": "Apollo Four Forty - Stop the Rock",
+            "description": "Classic release of the Liverpool band.",
+            "has_sizes": "False",
+            "price": 10.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "apollofourforty-stoptherock.JPEG"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021016",
+            "category": 2,
+            "name": "Break Machine - Break Dance Party",
+            "description": "Classic funky breaks.",
+            "has_sizes": "False",
+            "price": 10.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "breakmachine-breakdanceparty.JPEG"
+        }
+    },
+    
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021017",
+            "category": 2,
+            "name": "Dreadzone - Mash up the Dredz",
+            "description": "Old school tune from the London producers.",
+            "has_sizes": "False",
+            "price": 10.00,
+            "is_discount": "True",
+            "discount_price": 9.00,
+            "image": "dreadzone-mashupthedredz.JPEG"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021018",
+            "category": 2,
+            "name": "Lee Scratch Perry - Techno Party",
+            "description": "Jamaican music as it best.",
+            "has_sizes": "False",
+            "price": 10.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "leescractchperry-technoparty.JPEG"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021019",
+            "category": 2,
+            "name": "Stereo 8 - Flip Mode",
+            "description": "Breakbeats with acid influence.",
+            "has_sizes": "False",
+            "price": 5.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "stereo8-flipmode.JPEG"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021020",
+            "category": 2,
+            "name": "Stisch - Pack of reds",
+            "description": "Breakbeats with acid infuence.",
+            "has_sizes": "False",
+            "price": 8.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "stisch-packofreds.JPEG"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021021",
+            "category": 2,
+            "name": "The Herbalizer - Wall Grawling",
+            "description": "Breakbeats with acid influence.",
+            "has_sizes": "False",
+            "price": 5.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "theherbalizer-wallgrawling.JPEG"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021022",
+            "category": 3,
+            "name": "Abassi All Stars - Wake up dub",
+            "description": "Dub with global bass influence.",
+            "has_sizes": "False",
+            "price": 5.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "abassiallstars-wakeup.JPEG"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021023",
+            "category": 3,
+            "name": "B52s - Roam",
+            "description": "Classic song from the psichodelic Anthem's band.",
+            "has_sizes": "False",
+            "price": 5.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "b52s-roam.JPEG"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021024",
+            "category": 3,
+            "name": "Cashima Steele - Big Fat Cat",
+            "description": "A relaxing Dub ep.",
+            "has_sizes": "False",
+            "price": 5.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "cashimasteele-bigfatcat.JPEG"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021025",
+            "category": 3,
+            "name": "Daphne Oram - Electronic Sound Patterns",
+            "description": "Excellent material from the woman who changed the electronic music.",
+            "has_sizes": "False",
+            "price": 5.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "daphneooram-electronicsoundpatterns.JPEG"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021026",
+            "category": 3,
+            "name": "Florence and the Machine - You've got the Love",
+            "description": "Best seller song by Florence Welch.",
+            "has_sizes": "False",
+            "price": 5.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "florenceandthemachine-yougothelove.JPEG"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021027",
+            "category": 3,
+            "name": "Kelis - Trick me",
+            "description": "Rock steady version of Kelis track.",
+            "has_sizes": "False",
+            "price": 5.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "kelis-trickme.JPEG"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021028",
+            "category": 3,
+            "name": "Jah Warrior - Creation Riddim",
+            "description": "Jamaican dub and dancehall.",
+            "has_sizes": "False",
+            "price": 5.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "jahwarrior-creationriddim.JPEG"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021029",
+            "category": 3,
+            "name": "KLF - Last train to Trancentral",
+            "description": "Live version",
+            "has_sizes": "False",
+            "price": 5.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "klf-lasttraintotrascental.JPEG"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021030",
+            "category": 3,
+            "name": "Madness - Ourhouse",
+            "description": "Two Tone ska.",
+            "has_sizes": "False",
+            "price": 7.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "madness-ourhouse.JPEG"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021031",
+            "category": 3,
+            "name": "Muscle Emanuel - Nagging",
+            "description": "Jamaican dub and dancehall.",
+            "has_sizes": "False",
+            "price": 5.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "muscleemanuel-nagging.JPEG"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021032",
+            "category": 3,
+            "name": "Reggae Box - Swingaling",
+            "description": "Jamaican reggae and dancehall.",
+            "has_sizes": "False",
+            "price": 5.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "reggaaebox-swingaling.JPEG"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021033",
+            "category": 3,
+            "name": "The Clash - Straight to Hell",
+            "description": "Picture disc, for collectors.",
+            "has_sizes": "False",
+            "price": 10.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "theclash-straighttohell.JPEG"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021034",
+            "category": 3,
+            "name": "The Pogues - Fairytale of New York",
+            "description": "JAn Irish ode to Christmas.",
+            "has_sizes": "False",
+            "price": 5.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "thepogues-fairytaleofnewyork.JPEG"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021035",
+            "category": 3,
+            "name": "Todos Tus Muertos - En vivo Dale Aborigen",
+            "description": "Argentine punk rock.",
+            "has_sizes": "False",
+            "price": 5.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "todostusmuertos-envivodaleaborigen.JPEG"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021036",
+            "category": 3,
+            "name": "Soup Dragons - Mother Universe",
+            "description": "Classic tune from the 90's.",
+            "has_sizes": "False",
+            "price": 5.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "thesoupdragons-motheruniverse.JPEG"
+        }
+    },
 ]
