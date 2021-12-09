@@ -97,7 +97,16 @@ html {
     background-color: #000 !important;
   }
   
-  
+  /* Covers the background image */
+.overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #F7FFF7;
+  z-index: -1;
+}
 
   /* -------------------------------- Media Queries */
 
