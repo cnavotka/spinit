@@ -81,7 +81,7 @@ html {
   .btn-black:hover,
   .btn-black:active,
   .btn-black:focus {
-    background: black;
+    background: #222;
     color: white;
   }
   
