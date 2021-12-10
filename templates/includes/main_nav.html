@@ -20,9 +20,9 @@
                 Records
             </a>
             <div class="dropdown-menu shadow border-3">
-                <a href="" class="dropdown-item">Lp's</a>
-                <a href="" class="dropdown-item ">Ep's</a>
-                <a href="" class="dropdown-item">7 inches</a>
+                <a href="{% url 'products' %}?category=lps" class="dropdown-item">Lp's</a>
+                <a href="{% url 'products' %}?category=eps" class="dropdown-item ">Ep's</a>
+                <a href="{% url 'products' %}?category=seveninches" class="dropdown-item">7 inches</a>
             </div>
         </li>
 
@@ -31,9 +31,9 @@
                 Turntables & Accesories
             </a>
             <div class="dropdown-menu shadow border-3">
-                <a href="" class="dropdown-item">Turntables</a>
-                <a href="" class="dropdown-item">DJ Bags</a>
-                <a href="" class="dropdown-item">Accesories</a>
+                <a href="{% url 'products' %}?category=turntables" class="dropdown-item">Turntables</a>
+                <a href="{% url 'products' %}?category=djbags" class="dropdown-item">DJ Bags</a>
+                <a href="{% url 'products' %}?category=accesories" class="dropdown-item">Accesories</a>
                 
             </div>
         </li>
@@ -43,9 +43,9 @@
                 Studio
             </a>
             <div class="dropdown-menu shadow border-3">
-                <a href="" class="dropdown-item">Controllers</a>
-                <a href="" class="dropdown-item">Synth & Recorders</a>
-                <a href="" class="dropdown-item">Headphones & Mics</a>
+                <a href="{% url 'products' %}?category=controllers" class="dropdown-item">Controllers</a>
+                <a href="{% url 'products' %}?category=synths" class="dropdown-item">Synth &amp Recorders</a>
+                <a href="{% url 'products' %}?category=headphones" class="dropdown-item">Headphones &amp Mics</a>
             </div>
         </li>
 
