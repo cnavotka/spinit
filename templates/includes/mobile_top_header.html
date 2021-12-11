@@ -36,7 +36,7 @@
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
         {% if request.user.is_authenticated %}
         {% if request.user.is_superuser %}
-        <a href="" class="dropdown-item">Product Management</a>
+        <a href="{% url 'account_logout' %}" class="dropdown-item">Product Management</a>
         {% endif %}
         <a href="" class="dropdown-item">My Profile</a>
         <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -50,7 +50,7 @@
 <!-- Cart -->
 <div class="list-inline-item">
     <a class="{% if grand_total %} text-white{% else %}text-dark{% endif %} nav-link d-block d-lg-none"
-        href=""  style="font-size: small; padding: 0;">
+        href="{% url 'view_cart' %}"  style="font-size: small; padding: 0;">
         <div class="text-center">
             <div><i class="fas fa-shipping-fast fa-lg text-dark"></i></div>
             <p class="my-0 text-dark">
