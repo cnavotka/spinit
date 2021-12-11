@@ -50,7 +50,7 @@
 <!-- Cart -->
 <div class="list-inline-item">
     <a class="{% if grand_total %} text-white{% else %}text-dark{% endif %} nav-link d-block d-lg-none"
-        href=""  style="font-size: small; padding: 0;">
+        href="{% url 'view_bag' %}"  style="font-size: small; padding: 0;">
         <div class="text-center">
             <div><i class="fas fa-shipping-fast fa-lg text-dark"></i></div>
             <p class="my-0 text-dark">
