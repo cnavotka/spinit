@@ -55,7 +55,7 @@
         <!--Delivery banner-->
         <div id="service-banner" class="row text-center">
             <div class="col bg-black">
-                <h4 class="text-white my-1">Free Delivery when you spend more than €30 {{ free_delivery_threshold }}</h4>
+                <h4 class="text-white my-1">Free Delivery when you spend more than ${{ free_delivery_threshold }}</h4>
             </div>
         </div>
         
@@ -112,7 +112,7 @@
                     <!-- Shopping Cart -->
                     <li class="list-inline-item">
                         <!-- Displays the total beneath the icon. Icon is a clickable link, taking the user to the cart -->
-                        <a class="{% if grand_total %} text-warning {% else %} text-white {% endif %} nav-link" href="{% url 'view_cart' %}">
+                        <a class="{% if grand_total %} text-warning {% else %} text-white {% endif %} nav-link" href="">
                             <div class="text-center">
                                 <div><i class="fas fa-shipping-fast fa-lg"></i></div>
                                 <p class="my-0">
