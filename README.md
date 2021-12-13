@@ -104,6 +104,10 @@ I use Roboto form Google Fonts, because provides a good readability
 
 # Bugs
 
+The backgroun image was covering the full screen in the bag page. I found that I forgot the add {% block content %} in the code.
+
+![Bug](https://github.com/cnavotka/spinit/blob/main/static/images/bug-missing-blockcontent-baghtml.png)
+
 # Version Control
 
 Git as a local repository and GitHub as a remote repository are used for the project, and below is how they are used as the version control for the project.
