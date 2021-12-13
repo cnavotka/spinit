@@ -1,4 +1,4 @@
-#SPIN IT
+# SPIN IT
 
 This is an e-commerce website for DEE JEEYS where they can find second hand records and devices that I create for Milestone Project 4 (Full Stack Frameworks with Django) in Code Institute, Ireland. The use of the website is for educational purposes only, however, all the functionalities work as if it is an actual e-commerce website. It is a mobile responsive website and the link to the website is available HERE.
 
@@ -12,6 +12,30 @@ This is an e-commerce website for DEE JEEYS where they can find second hand reco
 ## Structure Plane
 
 ## Skeleton Plane
+
+The website is fully responsive.
+Below are the wireframes of the main pages of the website.
+
+Home Desktop [https://github.com/cnavotka/spinit/blob/main/static/images/Home%20desktop.png]
+Home iPhone [https://github.com/cnavotka/spinit/blob/main/static/images/Home%20Iphone.png]
+Products Desktop [https://github.com/cnavotka/spinit/blob/main/static/images/Product%20desktop.png]
+Products iPhone [https://github.com/cnavotka/spinit/blob/main/static/images/Product%20iPhone.png]
+Products Desktop [https://github.com/cnavotka/spinit/blob/main/static/images/Product%20page%20desktop.png]
+Products iPhone [https://github.com/cnavotka/spinit/blob/main/static/images/Product%20page%20iphone.png]
+Shopping cart Desktop [https://github.com/cnavotka/spinit/blob/main/static/images/Cart%20desktop.png]
+Shopping car iPhone [https://github.com/cnavotka/spinit/blob/main/static/images/Cart%20iphone.png]
+Checkout [https://github.com/cnavotka/spinit/blob/main/static/images/checkout%20desktop.png]
+Checkout iPhone [https://github.com/cnavotka/spinit/blob/main/static/images/checkout%20iphone.png]
+Checkout Success Desktop [https://github.com/cnavotka/spinit/blob/main/static/images/checkout-success-desktop.png]
+Checkout Success iPhone [https://github.com/cnavotka/spinit/blob/main/static/images/checkout-success-iphone.png]
+Register Desktop [https://github.com/cnavotka/spinit/blob/main/static/images/register-desktop.png]
+Register iPhone [https://github.com/cnavotka/spinit/blob/main/static/images/register-iphone.png]
+Login Desktop [https://github.com/cnavotka/spinit/blob/main/static/images/login-desktop.png]
+Login iPhone [https://github.com/cnavotka/spinit/blob/main/static/images/login-iphone.png]
+Profile Desktop [://github.com/cnavotka/spinit/blob/main/static/images/profile-desktop.png]
+Profile iPhone [https://github.com/cnavotka/spinit/blob/main/static/images/profile-iphone.png]
+Product Management Desktop [https://github.com/cnavotka/spinit/blob/main/static/images/product-management-desktop.png]
+Product Management iPhone [https://github.com/cnavotka/spinit/blob/main/static/images/product-management-iphone.png]
 
 ## Surface Plane
 ### Typography
