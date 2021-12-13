@@ -127,6 +127,18 @@ a.category-badge > span.badge:hover {
   cursor: pointer;
 }
 
+/* Footer styles */
+.container-fluid-footer {
+  overflow: hidden;
+  margin-top: 370px;
+  background: black !important;
+  color: white !important;
+}
+
+.social {
+  font-size: 21px !important;
+}
+
   /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
