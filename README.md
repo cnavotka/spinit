@@ -184,9 +184,15 @@ Below are the processes of deploying the website to Heroku and setting up static
 
 ### Code
 
+I followed the Boutique Ado project that mine is based on.
+
 ### Contents
 
+All text in the products description was writeen by myself.
+
 ### Media 
+
+All images of products and bakcground were taken by me. For the products pictures, I used and iPhone so they can look more DIY. For the background image, I used a Cannon camera.
 
 ## Acknowledgements
 I would like to thank;
