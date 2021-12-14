@@ -1,15 +1,15 @@
 # SPIN IT
 
-This is an e-commerce website for DEE JEEYS where they can find second hand records and devices that I create for Milestone Project 4 (Full Stack Frameworks with Django) in Code Institute, Ireland. The use of the website is for educational purposes only, however, all the functionalities work as if it is an actual e-commerce website. It is a mobile responsive website and the link to the website is available HERE.
+This is an e-commerce website for DEE JEEYS where they can find second hand records and devices that I create for Milestone Project 4 (Full Stack Frameworks with Django) in Code Institute, Ireland. The use of the website is for educational purposes only, however, all the functionalities work as if it is an actual e-commerce website. It is a mobile responsive website and the link to the website is available HERE [https://cnavotka-spin-it.herokuapp.com/]
 
-# User Stories
+![Responsive image](https://github.com/cnavotka/spinit/blob/main/static/images/all-devices-white.png)
+
+
+# Note for the Assessment
+
+I wasn't able to complete the project before the deadline, because of that, Stripe Payments, Profile App and Product Admin are missing.
 
 # UX planes
-## Strategy Plane
-
-## Scope Plane
-
-## Structure Plane
 
 ## Skeleton Plane
 
@@ -67,13 +67,6 @@ Helikon Tex [https://www.helikon-tex.com]
 
 I use Roboto form Google Fonts, because provides a good readability
 
-# Website Development plan
-
-# Features
-
-## Existing Features
-
-## Features left to Implement
 
 # Technologies Used
 
@@ -94,13 +87,8 @@ I use Roboto form Google Fonts, because provides a good readability
 * Github for online version control and keeping the files & documents
 * Heroku for deploying the website
 
-# Resources
-
-## General Resources
-
-## Tools
-
-# Testing
+## Testing
+The project wasn't finished at the moment of the submission, no test were made.
 
 # Bugs
 
