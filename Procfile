@@ -1,0 +1,1 @@
+web: gunicorn spin_it.wsgi:application
