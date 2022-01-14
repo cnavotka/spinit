@@ -92,9 +92,17 @@ The project wasn't finished at the moment of the submission, no test were made.
 
 # Bugs
 
-The backgroun image was covering the full screen in the bag page. I found that I forgot the add {% block content %} in the code.
+The backgroung image was covering the full screen in the bag page. I found that I forgot the add {% block content %} in the code.
 
 ![Bug](https://github.com/cnavotka/spinit/blob/main/static/images/bug-missing-blockcontent-baghtml.png)
+
+
+The Payment card wasn't working in the checkout , finiding this error when I inspected:
+
+![Bug 2](https://github.com/cnavotka/spinit/blob/main/media/card-stripe-bug.png)
+
+I fixed moving the stripe_elements.js file to the right location.
+
 
 # Version Control
 
