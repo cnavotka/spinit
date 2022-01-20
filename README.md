@@ -36,6 +36,12 @@ I would like to protect the website so only authorised users can take actions.
 
 # UX planes
 
+## Strategy 
+
+To achieve the user's primary goals and stories outlined in the User Stories section, all the functions and features on the tables below are minimum requirements and they are implemented in the website. (On a scale of 1 [least] - 5 [most])
+
+
+
 ## Skeleton Plane
 
 The website is fully responsive.
