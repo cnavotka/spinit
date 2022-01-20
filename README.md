@@ -5,9 +5,34 @@ This is an e-commerce website for DEE JEEYS where they can find second hand reco
 ![Responsive image](https://github.com/cnavotka/spinit/blob/main/static/images/all-devices-white.png)
 
 
-# Note for the Assessment
+# User stories
 
-I wasn't able to complete the project before the deadline, because of that, Stripe Payments, Profile App and Product Admin are missing.
+We have two types of users in the website. One is shoppers that are looking for second hand devices and records in excellent conditions. The other one, is the shop owner that is trying to sell the products.
+
+## Shopper's User Story
+
+As a user, I would like to see what the website is about at a glance.
+
+I want to see what the website is selling.
+
+I would like to be able to navigate throughout the website easily.
+
+I would like to register and login, and also see my orders history.
+
+I would like to see details in my shopping bag.
+
+I would like to pay easily and securely my purchase.
+
+## Owner's User Story
+
+As an owner, I would like to provide a simple and easy website to my customers.
+
+I would like to add, edit, update and delete products in an easy way.
+
+I would like to protect the website so only authorised users can take actions.
+
+
+
 
 # UX planes
 
@@ -86,6 +111,7 @@ I use Roboto form Google Fonts, because provides a good readability
 * Git for local version control, keeping the files & documents
 * Github for online version control and keeping the files & documents
 * Heroku for deploying the website
+* Gimp for the images
 
 ## Testing
 The project wasn't finished at the moment of the submission, no test were made.
