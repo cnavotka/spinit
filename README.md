@@ -131,11 +131,19 @@ The backgroung image was covering the full screen in the bag page. I found that 
 ![Bug](https://github.com/cnavotka/spinit/blob/main/static/images/bug-missing-blockcontent-baghtml.png)
 
 
+
+
 The Payment card wasn't working in the checkout , finiding this error when I inspected:
 
 ![Bug 2](https://github.com/cnavotka/spinit/blob/main/media/card-stripe-bug.png)
 
 I fixed moving the stripe_elements.js file to the right location.
+
+
+THe page title wasn't showing properly, I fixed adding the class text-dark
+
+![Bug 3](https://github.com/cnavotka/spinit/blob/main/static/images/text-dark-bug.png)
+
 
 
 # Version Control
