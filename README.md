@@ -5,6 +5,37 @@ This is an e-commerce website for DEE JEEYS where they can find second hand reco
 ![Responsive image](https://github.com/cnavotka/spinit/blob/main/static/images/all-devices-white.png)
 
 
+# Project Resubmission
+
+As per feedback gave by the assesor, this are the areas to improve:
+
+* LO1 Design, develop and implement a Full Stack web application, with a relational database, using the Django/Python Full Stack MVC framework and related contemporary technologies:
+
+1.2 Inadequate UX Design: Fixed
+1.4 Backed code for form lacks foolproof validations for incorrect user inputs, leads to poor user experience. Fixed, added in checkout, login and register.
+1.11 Testing step are missing. Fixed, a new folder TESTING.md added
+
+* LO2 Design and implement a relational data model, application features and business logic to manage, query and manipulate relational data to meet given needs in a particular real-world domain:
+
+2.3 Validation cannot be checked since the CRUD operations for admin are not available. Fixed, Admin and superuser created.
+2.4 CUD from CRUD cannot be accessed, since admin login isn't available. Fixed, Admin and superuser created.
+
+* LO3 Identify and apply authorisation, authentication and permission features in a full-stack web application solution:
+
+3.1 Unable to register/login, since the form is not visible properly. Fixed, user can register/login from the top navbar.
+3.2 Registration/Login functionality broken. Fixed, User can register and login.
+3.3 Unable to register/login, since the form is not visible properly. Fixed, user can register/login from the top navbar.
+
+* LO4 Design, develop and integrate an e-commerce payment system in a cloud-hosted, full-stack web application:
+
+4.1 No mechanism to pay for the e-commerce revenue model. Fixed, Stripe App set up
+4.2 Does not allow for users to initiate actions based on his choice or allows but broken functionality. Fixed, Stripe App set up using the checkout.
+
+* LO5 Document the development process through a git based version control system and deploy the full application to a cloud hosting platform:
+
+5.6 Missing certain critical section in README file that are required for complete understanding of the application. Fixed, documentation to the README file added.
+
+
 # User stories
 
 We have two types of users in the website. One is shoppers that are looking for second hand devices and records in excellent conditions. The other one, is the shop owner that is trying to sell the products.
