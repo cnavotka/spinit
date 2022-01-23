@@ -74,8 +74,89 @@ To achieve the user's primary goals and stories outlined in the User Stories sec
 ![Strategy Plane User](https://github.com/cnavotka/spinit/blob/main/media/user-stories.png)
 
 
+Based on the requirements of achieving user's and owner's goals and stories, below is the list of required pages with the features and functions. CRUD (Create, Read, Update, and Delete) functions are implemented on the website as it is required for admin user's product management.
+
+    Simple design Home page that the purpose of the website is obvious to anybody and even first-time users know how to navigate the website. Clearly displayed group of categories (e.g. RECORDS - TURNTABLES & ACCESORIES | STUDIO) that have categories in it (e.g. RECORDS --> LP's | EP's | 7 inches).
+
+    Product pages by the group of categories where users can view all the products belong to the group. Users are navigated to categories in this group from this page.
+
+    Product pages by category where users can view all the products belong to the category.
+
+    Product details page where uses can see all the product details. Users can also select options and put the product in the bag.
+
+    Shopping Bag page where users can see all the selected products before purchase. Users can change the quantity of the product or remove it.
+
+    Checkout page where users can provide shipping details and credit card details.
+
+    Checkout success page where users get confirmation of purchase.
+
+    Register page where users can create an account to keep the shipping address saved and to view order histories.
+
+    Login page where users can log in to the page.
+
+    Profile page where users can see the personal details and order histories.
+
+    Logout function that users can safely log out the website and takes users back to the home page.
+
+    Product Management pages (admin only) where admin can add, edit, and delete products.
+
+
+## Structure Plane
+
+### Front End
+
+The website consists of below core HTML pages and has some CSS and JavaScript
+
+    Home (index.html)
+    The main page of the website. There is a logo, search function, navigation to Group of Categories & Categories, Register & Login and Shopping Bag pages, a hero image with Shop Now button. There is a footer with some social icons. *The same header and footer are used across all html files
+
+    Products (products.html, products/<category_name>.html)
+    The pages where users can see products by a group of categories & category and have an access to the product details page.
+
+    Product Details (product/<product_id>.html)
+    The pages where users can see product details, with an option to select criteria (e.g. accesories) and add it in the shopping bag.
+
+    Shopping Bag (bag.html)
+    The page where users can view all the selected products and details. Users can adjust the quantity and there is an option to remove products. There is a button link to a checkout page for the final step of shopping.
+
+    Checkout (checkout.html)
+    The page where users can process the purchase. Stripe, which is a secured platform for credit card payment, is used on the website for processing payments.
+
+    Checkout Success (checkout_success.html)
+    The confirmation page where users are lead to when the payment process is completed. Users can see the order number, shipping address, product details. This page is accessible for registered users from Profile.
+
+    Register (signup.html)
+    The page where users can create an account to save their details for next shopping and keep their purchase histories. A form with a built-in function is created with Django Allauth package.
+
+    Login (login.html)
+    The page where users can log in to the website and access to the Profile page to see the personal details and purchase histories. A form with a built-in function is created with Django Allauth package.
+
+    Profile (profile.html)
+    The page where users can see personal details and purchase histories.
+
+    Add Products (add_products.html)
+    The page where only Admin has access and add a new product on the website.
+
+    Edit Products (edit_products.html)
+    The page where only Admin has access and edit products.
+
+    Base Templates (base.html and base.css)
+    The template documents that have core components of html and css and are used among other html files.
+
+    Admin (/admin)
+    The admin panel, which can be created with Django project, where Admin can take control of products and other data.
+
+    CSS & JavaScript (.css & .js)
+    CSS and JavaScript files of those HTML files are created within the same app folder.
+
+### Back End
+
+Users have options to purchase products as guest users or account holder users. Guest users cannot save personal details for their next shopping as personal details such as name, email address, shipping address etc belong to their order in the database. Account holder users who create an account with their email address and username, user name (user profile) is linked with their order so that personal details can be retrieved. Each product belongs to a category, a brand and these are identified by id. Each order has a unique order number which is generated when the order is processed and orders have shopper's and product details.
+SQLite, which is Django built-in database is used for development mode and Heroku Postgre is used for production mode. AWS (Amazon Web Services) is used to hold all static files and folders for the website for production mode.
+
 
 ## Skeleton Plane
+
 
 The website is fully responsive.
 Below are the wireframes of the main pages of the website.
@@ -131,6 +212,48 @@ Helikon Tex [https://www.helikon-tex.com]
 
 I use Roboto form Google Fonts, because provides a good readability
 
+## Website Development Plan
+
+This is a full-stack website that contains both front-end & back-end, so many Django apps, features and functions, therefore a good website development plan is required to maximise the efficiency of the development. Below is the summary of core tasks for the website and more detailed tasks are listed on GitHub Projects. 
+
+Follow the same process as Code Institute Mini Project, Boutique Ado
+
+* Planning The Website with UX5 Planes
+* Project Set-Up (Installing Django, Setting up Project, Testing connection, Creating Django superuser)
+* Authentication & Authorisation (Installing Allauth, Testing)
+* The Base Template (Creating base template)
+* The Home Page (Navigation bar, Header and Footer)
+* Products Set-Up (Creating Products app, Installing data, Filtering & Searching)
+* The Shopping Cart (Adding and adjusting products)
+* Toasts (Real-time notification)
+* Checkout with Stripe (Function, Form, Testing Stripe)
+* Profile (Displaying personal details and order history)
+* Product Admin (CRUD function for products)
+* Deployment (AWS, Heroku)
+* Emails (Setting up email functionality)
+* Code Refactoring (Checking code, Reviewing the design and updating)
+* Testing (Testing for HTML, CSS, JavaScript, Python, User Stories, Functions and Features)
+* Final Check Before Submission
+
+
+## Features
+
+### Existing Features
+
+
+* Create with HTML5, CSS3 (with Material Design for Bootstrap), JavaScript, Python (Django Framework), Stripe, AWS and Heroku
+* It consists of 1 product with 5 apps in Django
+* It consists of 1 base html template and main html files. (Excluding sub html files and some allauth html files)
+* All the features planned on Strategy Plane and Scope Plane
+
+### Features Left to Implement
+
+* Enlarging image when hovering
+* Refinements options
+* Creating an account with social media
+* Product comparison
+
+
 
 # Technologies Used
 
@@ -171,10 +294,14 @@ The Payment card wasn't working in the checkout , finiding this error when I ins
 I fixed moving the stripe_elements.js file to the right location.
 
 
-THe page title wasn't showing properly, I fixed adding the class text-dark
+The page title wasn't showing properly, I fixed adding the class text-dark
 
 ![Bug 3](https://github.com/cnavotka/spinit/blob/main/static/images/text-dark-bug.png)
 
+
+Confirmation email wasn't being sent, need to add HOST in Heroku config:
+
+![Email](https://github.com/cnavotka/spinit/blob/main/static/images/mail-error.png)
 
 
 # Version Control

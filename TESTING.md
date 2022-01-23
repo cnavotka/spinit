@@ -62,6 +62,12 @@ Please note that these errors are mostly related to lines being too long, being 
 
 ## Chrome Lighthouse
 
+* Lighthouse Desktop
+![Lighthouse Desktop](https://github.com/cnavotka/spinit/blob/main/static/images/lighthouse-desktop.png)
+
+![Lighthouse Mobile](https://github.com/cnavotka/spinit/blob/main/static/images/lighthouse-mobile.png)
+
+
 ## Validations
 
 * CSS Validator 
