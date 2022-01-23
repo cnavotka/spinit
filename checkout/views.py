@@ -13,6 +13,7 @@ from bag.contexts import bag_contents
 import stripe
 import json
 
+
 @require_POST
 def cache_checkout_data(request):
     try:
@@ -126,7 +127,7 @@ def checkout(request):
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
             Did you forget to set it in your environment?')
-    
+
     template = 'checkout/checkout.html'
     context = {
         'order_form': order_form,
@@ -178,4 +179,3 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
-
