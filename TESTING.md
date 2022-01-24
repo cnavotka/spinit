@@ -6,7 +6,7 @@
 
 * User navigates to: https://cnavotka-spin-it.herokuapp.com/
 
-    *User clicks on SHOP NOW button or they use the main links to look up cars.
+    * User clicks on SHOP NOW button or they use the main links to look up cars.
         SHOP NOW button shows all the various different car products.
 
     * User selects a PRODUCT to purchase and is taken to the product detail page.
@@ -55,9 +55,28 @@
 
             * User then receives a complete order summary.
 
+## Form Validation
+
+There are some forms on the website. Some of them are validated by front-end (e.g. @ mark for email input) and some by back-end (e.g. existing user name). A manual test is carried out to see if the validations and form functions work properly.
+
+#### Search Function
+
+The form takes any texts including special characters (e.g. £, @, [ etc) so there is no form validation for this and the search is processed when the search button is clicked as long as there is a text in the input box. It works fine when a key word exists in product names or descriptions, and when it does not it shows 0 result. When there is no text in the input field, then it displays an error message. The search function is available on all the pages and it works from anywhere on the page.
+
+#### Register and Login Forms
+
+Users must be unique so if the email address or username already exists in the database, it displays an error message for register page. Also, when the passwords do not match, it displays an error message. This is similar for the login page that if the email or user name does not exist in the database, it displays an error message and if password is incorrect, it also displays an error message.
+
+#### Add Product, Checkout and Stripe
+
+When mandatory fields are not filled in or the form is invalid, it displays an error message. For credit card details, it is validated by Stripe and if it is invalid details, it displays an error message.
+
+
+
 # HTML
 
 As the HTML code is completed on all HTML files, a code validation test is carried out by using W3C Markup Validation Service, which is a validator by the World Wide Web Consortium that allows checking HTML and XHTML documents for well-formed markup, to check any warnings and errors.
+
 bag-total.html
 bag.html
 checkout-buttons.html
@@ -97,7 +116,7 @@ $ shows a warning but comming from JQuery, so I ignore them. The same as some un
 
 # Python
 
-## Flake Errors
+As Python code is completed, a code validation test is carried out by using PEP8 (Python Enhancement Proposal) online to see if the code meets guidelines and best practices for the readability and consistency of Python code.
 
 Please note that these errors are mostly related to lines being too long, being completely new to Python and Django, I was genuinely fearful of going in and trying to fix these as I was scared about breaking something within the code.
 
@@ -110,8 +129,4 @@ Please note that these errors are mostly related to lines being too long, being 
 ![Lighthouse Mobile](https://github.com/cnavotka/spinit/blob/main/static/images/lighthouse-mobile.png)
 
 
-## Validations
-
-* CSS Validator 
-* HTML Validator
 

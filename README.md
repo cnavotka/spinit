@@ -76,29 +76,29 @@ To achieve the user's primary goals and stories outlined in the User Stories sec
 
 Based on the requirements of achieving user's and owner's goals and stories, below is the list of required pages with the features and functions. CRUD (Create, Read, Update, and Delete) functions are implemented on the website as it is required for admin user's product management.
 
-    Simple design Home page that the purpose of the website is obvious to anybody and even first-time users know how to navigate the website. Clearly displayed group of categories (e.g. RECORDS - TURNTABLES & ACCESORIES | STUDIO) that have categories in it (e.g. RECORDS --> LP's | EP's | 7 inches).
+* Simple design Home page that the purpose of the website is obvious to anybody and even first-time users know how to navigate the website. Clearly displayed group of categories (e.g. RECORDS - TURNTABLES & ACCESORIES | STUDIO) that have categories in it (e.g. RECORDS --> LP's | EP's | 7 inches).
 
-    Product pages by the group of categories where users can view all the products belong to the group. Users are navigated to categories in this group from this page.
+* Product pages by the group of categories where users can view all the products belong to the group. Users are navigated to categories in this group from this page.
 
-    Product pages by category where users can view all the products belong to the category.
+* Product pages by category where users can view all the products belong to the category.
 
-    Product details page where uses can see all the product details. Users can also select options and put the product in the bag.
+* Product details page where uses can see all the product details. Users can also select options and put the product in the bag.
 
-    Shopping Bag page where users can see all the selected products before purchase. Users can change the quantity of the product or remove it.
+* Shopping Bag page where users can see all the selected products before purchase. Users can change the quantity of the product or remove it.
 
-    Checkout page where users can provide shipping details and credit card details.
+* Checkout page where users can provide shipping details and credit card details.
 
-    Checkout success page where users get confirmation of purchase.
+* Checkout success page where users get confirmation of purchase.
 
-    Register page where users can create an account to keep the shipping address saved and to view order histories.
+* Register page where users can create an account to keep the shipping address saved and to view order histories.
 
-    Login page where users can log in to the page.
+* Login page where users can log in to the page.
 
-    Profile page where users can see the personal details and order histories.
+* Profile page where users can see the personal details and order histories.
 
-    Logout function that users can safely log out the website and takes users back to the home page.
+* Logout function that users can safely log out the website and takes users back to the home page.
 
-    Product Management pages (admin only) where admin can add, edit, and delete products.
+* Product Management pages (admin only) where admin can add, edit, and delete products.
 
 
 ## Structure Plane
@@ -107,52 +107,94 @@ Based on the requirements of achieving user's and owner's goals and stories, bel
 
 The website consists of below core HTML pages and has some CSS and JavaScript
 
-    Home (index.html)
-    The main page of the website. There is a logo, search function, navigation to Group of Categories & Categories, Register & Login and Shopping Bag pages, a hero image with Shop Now button. There is a footer with some social icons. *The same header and footer are used across all html files
+* Home (index.html)
+The main page of the website. There is a logo, search function, navigation to Group of Categories & Categories, Register & Login and Shopping Bag pages, a hero image with Shop Now button. There is a footer with some social icons. *The same header and footer are used across all html files
 
-    Products (products.html, products/<category_name>.html)
-    The pages where users can see products by a group of categories & category and have an access to the product details page.
+* Products (products.html, products/<category_name>.html)
+The pages where users can see products by a group of categories & category and have an access to the product details page.
 
-    Product Details (product/<product_id>.html)
-    The pages where users can see product details, with an option to select criteria (e.g. accesories) and add it in the shopping bag.
+* Product Details (product/<product_id>.html)
+The pages where users can see product details, with an option to select criteria (e.g. accesories) and add it in the shopping bag.
 
-    Shopping Bag (bag.html)
-    The page where users can view all the selected products and details. Users can adjust the quantity and there is an option to remove products. There is a button link to a checkout page for the final step of shopping.
+* Shopping Bag (bag.html)
+The page where users can view all the selected products and details. Users can adjust the quantity and there is an option to remove products. There is a button link to a checkout page for the final step of shopping.
 
-    Checkout (checkout.html)
-    The page where users can process the purchase. Stripe, which is a secured platform for credit card payment, is used on the website for processing payments.
+* Checkout (checkout.html)
+The page where users can process the purchase. Stripe, which is a secured platform for credit card payment, is used on the website for processing payments.
 
-    Checkout Success (checkout_success.html)
-    The confirmation page where users are lead to when the payment process is completed. Users can see the order number, shipping address, product details. This page is accessible for registered users from Profile.
+* Checkout Success (checkout_success.html)
+The confirmation page where users are lead to when the payment process is completed. Users can see the order number, shipping address, product details. This page is accessible for registered users from Profile.
 
-    Register (signup.html)
-    The page where users can create an account to save their details for next shopping and keep their purchase histories. A form with a built-in function is created with Django Allauth package.
+* Register (signup.html)
+The page where users can create an account to save their details for next shopping and keep their purchase histories. A form with a built-in function is created with Django Allauth package.
 
-    Login (login.html)
-    The page where users can log in to the website and access to the Profile page to see the personal details and purchase histories. A form with a built-in function is created with Django Allauth package.
+* Login (login.html)
+The page where users can log in to the website and access to the Profile page to see the personal details and purchase histories. A form with a built-in function is created with Django Allauth package.
 
-    Profile (profile.html)
-    The page where users can see personal details and purchase histories.
+* Profile (profile.html)
+The page where users can see personal details and purchase histories.
 
-    Add Products (add_products.html)
-    The page where only Admin has access and add a new product on the website.
+* Add Products (add_products.html)
+The page where only Admin has access and add a new product on the website.
 
-    Edit Products (edit_products.html)
-    The page where only Admin has access and edit products.
+* Edit Products (edit_products.html)
+The page where only Admin has access and edit products.
 
-    Base Templates (base.html and base.css)
-    The template documents that have core components of html and css and are used among other html files.
+* Base Templates (base.html and base.css)
+The template documents that have core components of html and css and are used among other html files.
 
-    Admin (/admin)
-    The admin panel, which can be created with Django project, where Admin can take control of products and other data.
+* Admin (/admin)
+The admin panel, which can be created with Django project, where Admin can take control of products and other data.
 
-    CSS & JavaScript (.css & .js)
-    CSS and JavaScript files of those HTML files are created within the same app folder.
+* CSS & JavaScript (.css & .js)
+CSS and JavaScript files of those HTML files are created within the same app folder.
 
 ### Back End
 
 Users have options to purchase products as guest users or account holder users. Guest users cannot save personal details for their next shopping as personal details such as name, email address, shipping address etc belong to their order in the database. Account holder users who create an account with their email address and username, user name (user profile) is linked with their order so that personal details can be retrieved. Each product belongs to a category, a brand and these are identified by id. Each order has a unique order number which is generated when the order is processed and orders have shopper's and product details.
 SQLite, which is Django built-in database is used for development mode and Heroku Postgre is used for production mode. AWS (Amazon Web Services) is used to hold all static files and folders for the website for production mode.
+
+### Products in Json Format
+
+{
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "SP2021001",
+            "category": 1,
+            "name": "Aphex Twin - Come to Daddy",
+            "description": "Classic album from the prolific Aphex Twin, include unreleased mixes.",
+            "has_sizes": "False",
+            "price": 15.00,
+            "is_discount": "False",
+            "discount_price": 0.00,
+            "image": "aphextwin-cometodaddy.JPEG"
+        }
+    },
+
+
+### Categories in Json Format
+
+ {
+        "pk": 1,
+        "model": "products.category",
+        "fields": { "name": "lps", "friendly_name": "LP" }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": { "name": "eps", "friendly_name": "EP" }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": { "name": "seveninches", "friendly_name": "Seveninches" }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": { "name": "turntables", "friendly_name": "Turntables" }
+    },
 
 
 ## Skeleton Plane
@@ -276,7 +318,9 @@ Follow the same process as Code Institute Mini Project, Boutique Ado
 * Gimp for the images
 
 ## Testing
-The project wasn't finished at the moment of the submission, no test were made.
+The link for the Testing folder is here:
+[https://github.com/cnavotka/spinit/blob/main/TESTING.md]
+
 
 # Bugs
 
