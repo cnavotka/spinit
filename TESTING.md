@@ -72,6 +72,42 @@ Users must be unique so if the email address or username already exists in the d
 When mandatory fields are not filled in or the form is invalid, it displays an error message. For credit card details, it is validated by Stripe and if it is invalid details, it displays an error message.
 
 
+## Functions
+
+There are some functionalities, which are run by views.py file in each app (in some cases by contexts.py), on the website. A manual test is carried out to see if these functions work as expected.
+
+#### Bag App:
+
+* View Bag: Products in the bag can be viewed by clicking the bag icon or a process your order button.
+* Add Bag: Products can be added from the product page by clicking an add to shopping cart button. If the same product has different sizes (and right or left for golf clubs), they are added separately.
+* Adjust Bag: Products can be adjusted in the Bag. Change the quantity of the product and remove it.
+* Display: Price per product, discount price and total value including shipping cost show based on the products in the bag.
+
+#### Checkout App:
+
+* Checkout: Checkout is done by completing the form & credit card details and clicking a complete order button. Products in the bag can be views by clicking the bag icon or a process your order button.
+* Checkout Success: When the order is completed, it creates an order in the database and saves the info. It also shows checkout success page for users.
+* Confirmation email: When the order is succeeded (means payment in Stripe goes through), a confirmation email is sent.
+* Stripe: When the order is completed, it creates a record of payment_intent, charge.succeeded and payment_intent.succeeded
+
+#### Products App:
+
+* Product Display: Products are displayed by group of categories, category, brand, sale products and all products. They can be sorted by price, category and product name both ascending and descending order. Products can be searched by a keyword 
+* Product Details Display: Product details can be viewed by clicking an image of the product. It displays product category, ID, description, price, size (if applicable), discount price (if applicable).
+* Product Add, Edit and Delete: Only authorised user (admin) is allowed to do these.
+
+#### Profile App
+
+* Profile: Access to the profile page where users can update the personal details and access to the order history.
+* Profile (Admin): For admin user, Edit and Delete buttons appear on each product and there is a page for Adding product.
+
+#### Authorised Users
+
+There are some pages that only authorised users have access to. This is to test and confirm that non-authorised users have no access to these pages.
+* Profile page: Only logged in users have access to the profile page. When /profile/ is typed on URL, unless users are logged in, users are directed to the login page.
+* Add Product page: Only admin has access to the page. When /products/add/ is typed on URL, if users are not logged in, users are directed to the login page. If users are logged in, then users are directed to the home page with an error message unless Admin user.
+* Edit Product page and Delete product function: Same as "Add Product".
+* Order History: Only the user who purchased the product has access to the order history. When the order history URL is typed and if users are not the user who purchased the product, the users are redirected to the profile page with an error message.
 
 # HTML
 
