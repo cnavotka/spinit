@@ -62,14 +62,23 @@ There are some forms on the website. Some of them are validated by front-end (e.
 #### Search Function
 
 The form takes any texts including special characters (e.g. £, @, [ etc) so there is no form validation for this and the search is processed when the search button is clicked as long as there is a text in the input box. It works fine when a key word exists in product names or descriptions, and when it does not it shows 0 result. When there is no text in the input field, then it displays an error message. The search function is available on all the pages and it works from anywhere on the page.
+![Search Found](https://github.com/cnavotka/spinit/blob/main/static/images/search-found.png)
+![Search not Found](https://github.com/cnavotka/spinit/blob/main/static/images/search-not-found.png)
+
 
 #### Register and Login Forms
 
-Users must be unique so if the email address or username already exists in the database, it displays an error message for register page. Also, when the passwords do not match, it displays an error message. This is similar for the login page that if the email or user name does not exist in the database, it displays an error message and if password is incorrect, it also displays an error message.
+Users must be unique so if the email address or username already exists in the database, it displays an error message for register page. Also, when the passwords do not match, it displays an error message. This is similar for the login page that if the email or user name does not exist in the database, it displays an error message and if password is incorrect, it also displays an error message. If the registration is successful, the user receives an email with a link to confirm the registration. If already register, the user can see the personal information in the profile.
+![Link](https://github.com/cnavotka/spinit/blob/main/static/images/email-confirmation.png)
+![Profile](https://github.com/cnavotka/spinit/blob/main/static/images/profile.png)
+
 
 #### Add Product, Checkout and Stripe
 
-When mandatory fields are not filled in or the form is invalid, it displays an error message. For credit card details, it is validated by Stripe and if it is invalid details, it displays an error message.
+When mandatory fields are not filled in or the form is invalid, it displays an error message. For credit card details, it is validated by Stripe and if it is invalid details, it displays an error message. If the checkpout is successful, we can see a webhook confirmation on Stripe and Order confirmation in the Profile.
+![Credit card not valid](https://github.com/cnavotka/spinit/blob/main/static/images/invalid-card.png)
+![Webhook](https://github.com/cnavotka/spinit/blob/main/static/images/webhook-test.png)
+![Order Confirmation](https://github.com/cnavotka/spinit/blob/main/static/images/order-confirmation.png)
 
 
 ## Functions
