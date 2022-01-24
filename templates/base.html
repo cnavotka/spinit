@@ -117,7 +117,7 @@
                         <!-- Displays the total beneath the icon. Icon is a clickable link, taking the user to the cart -->
                         <a class="{% if grand_total %} text-warning {% else %} text-white {% endif %} nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center">
-                                <div><i class="fas fa-shipping-fast fa-lg"></i></div>
+                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
                                     <!-- If there's something in the cart, the cost will be displayed, otherwise it will be set a € zero -->
                                     {% if grand_total %}
