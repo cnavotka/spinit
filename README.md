@@ -11,12 +11,15 @@ As per feedback gave by the assesor, this are the areas to improve:
 
 ### LO2 Design and implement a relational data model, application features and business logic to manage, query annd manipulate relational data to meet given needs in a particular real-world domain:
 
-* 2.3 Validation cannot be checked since the CRUD operations for admin are not available.
-* 2.4 The login form submission is throwing an internal server error, hence unable to access admin panel.
+* 2.3 Validation cannot be checked since the CRUD operations for admin are not available. FIXED, operations for the Admin/Superuser are available using /admin after the project address <https://cnavotka-spin-it.herokuapp.com/admin/login/?next=/admin/> or in the Login form in the website <https://cnavotka-spin-it.herokuapp.com/accounts/login/>
+
+* 2.4 The login form submission is throwing an internal server error, hence unable to access admin panel. FIXED is working properly noe
 
 ### LO3 Identify and apply authorisation, authentication and permission features in a full-stack web application solution:
 
-* 3.3 Unable to register/login, since the form is not visible properly. Fixed, user can register/login from the top navbar.
+* 3.3 Unable to access admin panel. Fixed, admin/superuser can login from the top navbar or from the admin panel <https://cnavotka-spin-it.herokuapp.com/admin/login/?next=/admin/>
+
+#### The assesor would find the screenshots in the Testing folder [https://github.com/cnavotka/spinit/blob/main/TESTING.md]
 
 
 
