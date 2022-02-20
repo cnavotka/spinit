@@ -173,5 +173,21 @@ Please note that these errors are mostly related to lines being too long, being 
 
 ![Lighthouse Mobile](https://github.com/cnavotka/spinit/blob/main/static/images/lighthouse-mobile.png)
 
+## Assesment Test
+
+Here you can find the screenshots testing if the login and CRUD operations for the admin in the top navbar of the deployed site as admin/superuser works.
+
+* Add product
+![Add Product](https://github.com/cnavotka/spinit/blob/main/static/images/test-admin-add-topbar.png)
+
+* Edit product (Change the defualt 'No image" for a reandom image)
+![Edit Product](https://github.com/cnavotka/spinit/blob/main/static/images/test-admin-edit-topbar.png)
+
+* Delete product (Search for the product after delete it)
+![Delete product](https://github.com/cnavotka/spinit/blob/main/static/images/test-admin-delete-topbar.png)
+
+
+
+
 
 
