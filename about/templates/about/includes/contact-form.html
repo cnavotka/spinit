@@ -1,0 +1,50 @@
+<div class="h-50 products-hero" id="contact">
+
+    <hr>
+    <div class="row">
+        <div class="col-xl-12">
+            <!-- Contact form -->
+            <section class="mb-4 form-padding">
+                <div class="bg-beige form-border">
+
+                    
+                    <h2 class="font-weight-bold text-center my-4">Contact Us</h2>
+                    
+                
+
+                    <div class="row">
+
+                        <div class="col-md-9 mb-md-0 mb-5">
+                            {% csrf_token %}
+                            {{ form.name_of_field.errors }}
+
+                            {% crispy form %}
+                        </div>
+                      <!-- Additional contact information -->
+                        <div class="col-md-3 text-center">
+                            <ul class="list-unstyled mb-0">
+                                <li><i class="fas fa-map-marker-alt fa-2x contact-icon"></i>
+                                    <p class="mobile-contact-info">1 Main Street, Ennis, Co Clare, Ireland</p>
+                                </li>
+
+                                <li><i class="fas fa-phone mt-4 fa-2x contact-icon"></i>
+                                    <p class="mobile-contact-info">(+353) 065-1234 123</p>
+                                </li>
+
+                                <li><i class="fas fa-envelope mt-4 fa-2x contact-icon"></i>
+                                    <p class="mobile-contact-info">spin.it.shop@gmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+            </section>
+            
+
+        </div>
+    </div>
+
+</div>
