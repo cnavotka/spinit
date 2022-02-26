@@ -184,6 +184,8 @@ SQLite, which is Django built-in database is used for development mode and Herok
         "fields": { "name": "turntables", "friendly_name": "Turntables" }
     },
 
+![Backend](https://github.com/cnavotka/spinit/blob/main/static/images/backend.JPG)
+
 
 ## Skeleton Plane
 
