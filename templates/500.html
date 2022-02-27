@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<!-- 500 Error -->
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font mb-1 text-dark">500 Error</h2>
+            <h3 class="text-danger">Whoops! There seems to be problem with the server. Could we maybe interest you in some
+                of our records?!</h3>
+            <hr class="w-50 mb-1">
+            <!-- Discover Now Button -->
+            <div class="container">
+                <h4>
+                    <a href="{% url 'products' %}" class="discover-records-btn btn btn-lg rounded-8 text-uppercase py-3">
+                        Shop Now!
+                    </a>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

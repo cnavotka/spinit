@@ -18,7 +18,7 @@ def about(request):
             email_message = form.cleaned_data['message']
             sender = form.cleaned_data['email']
             send_mail(email_subject, email_message,
-                      sender, ['david.kelley.photos@gmail.com'])
+                      sender, ['spin.it.shop@gmail.com'])
             form.save()
 
             # Show a message if the form goes through
