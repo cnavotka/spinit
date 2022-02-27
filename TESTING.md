@@ -143,6 +143,9 @@ main_nav.html
 mobile_top_header.html
 Minor errors found and fixed.
 
+Before resubmission, no errors found. Just in case I went for a last check but the service was unavailable so not able to get a screenshot. Here you have the 503 response:
+![Validator 503](https://github.com/cnavotka/spinit/blob/main/static/images/validator-unavailable.png)
+
 
 # CSS 
 
