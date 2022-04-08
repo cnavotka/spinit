@@ -1,6 +1,6 @@
 # SPIN IT
 
-This is an e-commerce website for DEE JEEYS where they can find second hand records and devices that I create for Milestone Project 4 (Full Stack Frameworks with Django) in Code Institute, Ireland. The use of the website is for educational purposes only, however, all the functionalities work as if it is an actual e-commerce website. It is a mobile responsive website and the link to the website is available HERE [https://cnavotka-spin-it.herokuapp.com/]
+This is an e-commerce website for DEE JAYS where they can find second hand records and devices that I create for Milestone Project 4 (Full Stack Frameworks with Django) in Code Institute, Ireland. The use of the website is for educational purposes only, however, all the functionalities work as if it is an actual e-commerce website. It is a mobile responsive website and the link to the website is available HERE [https://cnavotka-spin-it.herokuapp.com/]
 
 ![Responsive image](https://github.com/cnavotka/spinit/blob/main/static/images/all-devices-white.png)
 
