@@ -5,6 +5,8 @@ This is an e-commerce website for DEE JAYS where they can find second hand recor
 ![Responsive image](https://github.com/cnavotka/spinit/blob/main/static/images/all-devices-white.png)
 
 
+As per charges in AWS I desconected the bucket hosting static and media to website
+
 # User stories
 
 We have two types of users in the website. One is shoppers that are looking for second hand devices and records in excellent conditions. The other one, is the shop owner that is trying to sell the products.
